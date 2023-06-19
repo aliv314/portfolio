@@ -4,9 +4,8 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      Hello!
-    </>
+    <main className='bg-navy-blue h-full w-full'>
+    </main>
   );
 }
 
