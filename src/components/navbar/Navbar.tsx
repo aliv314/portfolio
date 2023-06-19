@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 
-const Navbar: FC<any> = () =>{
+const Navbar: FC = () =>{
     return (<>
-        <nav className=' w-max h-8'>
-
+        <nav className=' w-full h-12 h flex items-center bg-navy-blue'>
+            This is the Nav!
         </nav>
     </>)
 }

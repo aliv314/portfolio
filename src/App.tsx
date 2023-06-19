@@ -1,13 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/Navbar';
 function App() {
   // Order is About, Projects, Skills, Blog
   return (
     <>
-    <header>
-      
-    </header>
+    <Navbar/>
     <main className='bg-teal h-full w-full'>
       <section> About </section>
       <section> Projects </section>
