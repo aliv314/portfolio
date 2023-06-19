@@ -4,12 +4,17 @@ import './App.css';
 function App() {
   // Order is About, Projects, Skills, Blog
   return (
+    <>
+    <header>
+      
+    </header>
     <main className='bg-teal h-full w-full'>
       <section> About </section>
       <section> Projects </section>
       <section> Skills </section>
       <section> Blog </section>
     </main> 
+    </>
   );
 }
 
