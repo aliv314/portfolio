@@ -2,15 +2,22 @@ import { Fragment, FC } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 
+interface NavbarComponents {
+  projectsRef : React.RefObject<any>;
+  skillsRef : React.RefObject<any>;
+  aboutRef : React.RefObject<any>;
+  blogRef :  React.RefObject<any>;
+}
 
 function classNames(...classes: Array<string | undefined>) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Navbar: FC = () => {
+const Navbar: FC <NavbarComponents>= (props) => {
+  const {projectsRef, skillsRef, aboutRef, blogRef} = props
   return (
     <>
-      <nav className=" fixed w-full h-12 h flex items-center justify-end px-2 bg-navy-blue">
+      <nav className="fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
         <Menu as="div" className="relative inline-block text-left">
           <div>
             <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -34,56 +41,49 @@ const Navbar: FC = () => {
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
+                    <p className= {
+                      classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
+                        "block px-4 py-2 text-sm select-none"
+                      )} onClick={ () => aboutRef.current.scrollIntoView({behavior: "smooth", block: "start"} )}>
                       About
-                    </a>
+                    </p>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
+                    <p className= {
+                      classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
+                        "block px-4 py-2 text-sm select-none"
+                      )} onClick={ () => projectsRef.current.scrollIntoView({behavior: "smooth", block: "start"} )}>
                       Projects
-                    </a>
+                    </p>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
+                    <p className= {
+                      classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
+                        "block px-4 py-2 text-sm select-none"
+                      )} onClick={ () => skillsRef.current.scrollIntoView({behavior: "smooth", block: "start"} )}>
                       Skills
-                    </a>
+                    </p>
                   )}
                 </Menu.Item>
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
-                      className={classNames(
+                    <p className= {
+                      classNames(
                         active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                        "block px-4 py-2 text-sm"
-                      )}
-                    >
+                        "block px-4 py-2 text-sm select-none"
+                      )} onClick={ () => blogRef.current.scrollIntoView({behavior: "smooth", block: "start"} )}>
                       Blog
-                    </a>
+                    </p>
                   )}
                 </Menu.Item>
+                
               </div>
             </Menu.Items>
           </Transition>
