@@ -20,6 +20,9 @@ module.exports = {
       'tablet': '768px',
       'desktop': '1280px',
     },
+    animation: {
+      'spin-slow': 'spin 10s linear infinite',
+    }
   },
   plugins: [],
 }

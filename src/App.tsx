@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import { useRef } from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
+import Hero from './components/hero/Hero';
 function App() {
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
@@ -12,6 +13,9 @@ function App() {
   return (
     <>
     <Navbar aboutRef = {aboutRef} projectsRef = {projectsRef} skillsRef = {skillsRef} blogRef = {blogRef} />
+    <header className=' bg-teal flex items-center justify-start'>
+      <Hero/>
+    </header>
     <main className='pt-12 bg-teal h-full w-full'>
       <section  ref={aboutRef} className ="py-4"> 
         About 
