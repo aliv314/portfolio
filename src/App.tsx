@@ -13,11 +13,11 @@ function App() {
   return (
     <>
     <Navbar aboutRef = {aboutRef} projectsRef = {projectsRef} skillsRef = {skillsRef} blogRef = {blogRef} />
-    <header className=' bg-teal flex items-center justify-start'>
+    <header className='bg-teal flex items-center justify-start'>
       <Hero/>
     </header>
     <main className='pt-12 bg-teal h-full w-full'>
-      <section  ref={aboutRef} className ="py-4"> 
+      <section ref={aboutRef} className ="py-4"> 
         About 
         <p>
         Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.
