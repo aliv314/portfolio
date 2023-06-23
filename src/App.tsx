@@ -9,6 +9,9 @@ function App() {
   const projectsRef = useRef(null)
   const skillsRef = useRef(null)
   const blogRef = useRef(null)
+
+  const aboutTitle = `Hi I'm Alejandro!`
+  const aboutText  = `I’m a recent computer science and software engineering bootcamp graduate with a passion for problem solving and optimizing software solutions. Given my academic background, I’m committed to continuously expanding my knowledge and excel in fast-paced environments with high expectations.`
   
   return (
     <>
@@ -16,23 +19,23 @@ function App() {
     <header className='bg-teal'>
       <Hero/>
     </header>
-    <main className='pt-12 px-8 bg-teal h-full w-full'>
-      <section ref={aboutRef} className ="py-4"> 
-        <AboutCard title="About" about="This is the about section :D" ></AboutCard>
+    <main className='p-8 bg-teal h-full w-full'>
+      <section ref={aboutRef} className = "mb-8"> 
+        <AboutCard title={aboutTitle} about={aboutText} ></AboutCard>
       </section>
-      <section ref = {projectsRef} className ="py-4"> 
+      <section ref = {projectsRef} className ="mb-8"> 
         Projects 
         <p>
         Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.
         </p>
       </section>
-      <section ref = {skillsRef} className ="py-4"> 
+      <section ref = {skillsRef} className ="mb-8"> 
         Skills  
         <p>
         Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.
         </p>
       </section>
-      <section ref = {blogRef} className ="py-4"> 
+      <section ref = {blogRef} className ="mb-8"> 
         Blog 
         <p>
         Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.

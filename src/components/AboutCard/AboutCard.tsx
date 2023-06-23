@@ -7,9 +7,9 @@ interface AboutCardProps{
 const AboutCard:FC<AboutCardProps>= (props) => {
     const {title, about} = props;
     return <>
-        <div className='bg-navy-blue flex flex-wrap items-center rounded-lg p-12 '>
-            <h1 className='mr-6 leading-4'> {title} </h1>
-            <p className=''> {about} </p>
+        <div className='bg-navy-blue items-center rounded-3xl p-10 '>
+            <h1 className='text-3xl mb-4'> {title} </h1>
+            <p className='leading-6'> {about} </p>
         </div>
     </>
 }
