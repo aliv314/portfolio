@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import { useRef } from 'react';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Hero from './components/hero/Hero';
+import Navbar from './components/NavBar/Navbar';
+import Hero from './components/Hero/Hero';
 function App() {
   const aboutRef = useRef(null)
   const projectsRef = useRef(null)
