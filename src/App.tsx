@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     <Navbar aboutRef = {aboutRef} projectsRef = {projectsRef} skillsRef = {skillsRef} blogRef = {blogRef} />
-    <header className='bg-teal flex items-center justify-start'>
+    <header className='bg-teal'>
       <Hero/>
     </header>
     <main className='pt-12 bg-teal h-full w-full'>
