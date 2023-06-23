@@ -13,8 +13,7 @@ const Hero: FC = () => {
                 <img className="absolute w-48 h-48 rounded-full object-cover" src={devPic} alt="Developer's headshot"/>
             </div>
         </div>
-    )
-    
+    )    
 }
 
 export default Hero;
