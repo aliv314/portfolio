@@ -6,6 +6,7 @@ import Navbar from './components/NavBar/Navbar';
 import Hero from './components/Hero/Hero';
 import AboutCard from './components/AboutCard/AboutCard';
 import SkillsCard from './components/SkillsCard/SkillsCard';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 
 function App() {
   const aboutRef = useRef(null)
@@ -27,21 +28,18 @@ function App() {
         <AboutCard title={aboutTitle} about={aboutText} ></AboutCard>
       </section>
       <section ref = {projectsRef} className ="mb-8"> 
-        Projects 
-        <p>
-        Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.
-        </p>
+        <ProjectCard></ProjectCard>
       </section>
       <section ref = {skillsRef} className ="mb-8"> 
         Skills  
         <SkillsCard></SkillsCard>
       </section>
-      <section ref = {blogRef} className ="mb-8"> 
+      {/* <section ref = {blogRef} className ="mb-8"> 
         Blog 
         <p>
         Pokem ipsum dolor sit amet Walrein Fraxure Zapdos Rayquaza Starly Klink. Volcano Badge surrender now or prepare to fight Escavalier Shroomish blast off at the speed of light Glaceon Zapdos. Thundershock Braviary Sand-Attack Grotle Pallet Town Scraggy Mienfoo. Rock Graveler Leech Seed Registeel Articuno Chingling Technical Machine. Fire Red Pokemon Vanillish Pichu Maractus Heatran Flaaffy.
         </p>
-      </section>
+      </section> */}
     </main> 
     </>
   );
