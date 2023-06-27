@@ -4,7 +4,7 @@ interface AboutCardProps{
     about: String
 }
 
-const AboutCard:FC<AboutCardProps>= (props) => {
+const AboutCard:FC<AboutCardProps> = (props) => {
     const {title, about} = props;
     return <>
         <div className='bg-navy-blue items-center rounded-3xl p-10 '>
