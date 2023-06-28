@@ -12,7 +12,9 @@
   font-family: McLaren;
   color: white;
 }
-
+body{
+  background-color: #36868F;
+}
 section{
   scroll-margin-top: 3rem;
 }

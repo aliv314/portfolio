@@ -1,4 +1,4 @@
-import { Fragment, FC } from 'react'
+import { Fragment, FC, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 
 interface NavbarComponents {
@@ -14,10 +14,30 @@ function classNames(...classes: Array<string | undefined>) {
 
 const Navbar: FC<NavbarComponents> = (props) => {
   const { projectsRef, skillsRef, aboutRef, blogRef } = props
+  
+  const [showMenu, setShowMenu] = useState(false)
+
+  const closeMenu = function () {
+    setShowMenu(false)
+  }
+
+  const openMenu = function () {
+    setShowMenu(true)
+  }
+  
   return (
     <>
       <nav className="fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
-        
+        {/* On Click nav appears */}
+        <div onClick={() => {openMenu()}} className='rounded-lg px-3 py-2 flex justify-center items-center'>
+          <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true"/>
+        </div>
+        {showMenu && <div className='absolute top-14 '>
+            <div className='w-[10rem] bg-navy-blue'>
+              <img></img>
+              <p></p>
+            </div>
+          </div>}
       </nav>
     </>
   );
