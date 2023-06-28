@@ -45,11 +45,12 @@ const Navbar: FC<NavbarComponents> = (props) => {
     // },
 
   ]
+
   const [showMenu, setShowMenu] = useState(false)
 
 
   const toggleMenu = function () {
-    showMenu ? setShowMenu(false) : setShowMenu(true); 
+    showMenu ? setShowMenu(false) : setShowMenu(true);
   }
 
   return (
@@ -59,19 +60,19 @@ const Navbar: FC<NavbarComponents> = (props) => {
         <div onClick={() => { toggleMenu() }} className='z-10 rounded-lg px-3 py-2 flex justify-center items-center'>
           <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </div>
-        {<div className='absolute top-[3.25rem] flex flex-col py-2 pl-4 pr-6 bg-navy-blue rounded-md '>
-            {dropDownItems.map(function (item) {
-              return (
+        {showMenu && <div className='absolute top-[3.25rem] flex flex-col py-2 pl-4 pr-6 bg-navy-blue rounded-md '>
+          {dropDownItems.map(function (item) {
+            return (
               <div className='flex my-2' onClick={() => {
                 item.ref.current.scrollIntoView({ behavior: "smooth", block: "start" })
                 toggleMenu()
-                }} >
+              }} >
                 <img className='mr-5' alt={item.alt} src={item.icon}></img>
                 <p className='select-none'>{item.name}</p>
               </div>
-              )
-            })}
-          </div>
+            )
+          })}
+        </div>
         }
       </nav>
     </>
