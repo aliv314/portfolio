@@ -9,7 +9,7 @@ const SkillTag: FC<TagProp> = (props) => {
 
     return (<li className='relative group '>
         <div className="absolute flex justify-center items-center bottom-[3.5rem] bg-dark-blue h-12 rounded-3xl px-4 py-4 invisible group-hover:visible">
-            <p className='text-white w-full text-center whitespace-nowrap'>
+            <p className='select-none text-white w-full text-center whitespace-nowrap'>
                 {skill}
             </p>
         </div>

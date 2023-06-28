@@ -1,5 +1,4 @@
 import { Fragment, FC } from 'react'
-import { Menu, Transition } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 
 interface NavbarComponents {
@@ -18,8 +17,16 @@ const Navbar: FC<NavbarComponents> = (props) => {
   return (
     <>
       <nav className="fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
-        <div className='z-10 relative'>
-          <Menu as="div" className="relative inline-block text-left">
+        
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;
+
+{/* <div className='z-10 relative'>
+          <Menu as="div" className="relative inline-block text-right">
             <div>
               <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                 <Bars3Icon
@@ -89,10 +96,4 @@ const Navbar: FC<NavbarComponents> = (props) => {
               </Menu.Items>
             </Transition>
           </Menu>
-        </div>
-      </nav>
-    </>
-  );
-};
-
-export default Navbar;
+        </div> */}
