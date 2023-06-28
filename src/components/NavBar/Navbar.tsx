@@ -1,10 +1,14 @@
 import { Fragment, FC, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
+import aboutIcon from '../../assets/images/icons/about-icon.svg'
+import projectsIcon from '../../assets/images/icons/projects-icon.svg'
+import skillsIcon from '../../assets/images/icons/skills-icon.svg'
+import blogIcon from '../../assets/images/icons/blog-icon.svg'
 
 interface NavbarComponents {
+  aboutRef: React.RefObject<any>;
   projectsRef: React.RefObject<any>;
   skillsRef: React.RefObject<any>;
-  aboutRef: React.RefObject<any>;
   blogRef: React.RefObject<any>;
 }
 
@@ -14,7 +18,33 @@ function classNames(...classes: Array<string | undefined>) {
 
 const Navbar: FC<NavbarComponents> = (props) => {
   const { projectsRef, skillsRef, aboutRef, blogRef } = props
-  
+  const dropDownItems = [
+    {
+      name: "About",
+      icon: aboutIcon,
+      alt: "About Nav Thumbnail",
+      ref: aboutRef
+    },
+    {
+      name: "Projects",
+      icon: projectsIcon,
+      alt: "Projects Nav Thumbnail",
+      ref: projectsRef
+    },
+    {
+      name: "Skills",
+      icon: skillsIcon,
+      alt: "Skills Nav Thumbnail",
+      ref: skillsRef
+    },
+    // {
+    //   name: "Blog",
+    //   icon: blogIcon,
+    //   alt: "Blog Nav Thumbnail",
+    //   ref: blogRef
+    // },
+
+  ]
   const [showMenu, setShowMenu] = useState(false)
 
   const closeMenu = function () {
@@ -24,20 +54,29 @@ const Navbar: FC<NavbarComponents> = (props) => {
   const openMenu = function () {
     setShowMenu(true)
   }
-  
+
   return (
     <>
       <nav className="fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
         {/* On Click nav appears */}
-        <div onClick={() => {openMenu()}} className='rounded-lg px-3 py-2 flex justify-center items-center'>
-          <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true"/>
+        <div onClick={() => { openMenu() }} className='rounded-lg px-3 py-2 flex justify-center items-center'>
+          <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </div>
-        {showMenu && <div className='absolute top-14 '>
-            <div className='w-[10rem] bg-navy-blue'>
-              <img></img>
-              <p></p>
-            </div>
-          </div>}
+        {
+          showMenu && <div className='absolute top-[3.25rem] flex flex-col py-2 pl-4 pr-6 bg-navy-blue rounded-md '>
+            {dropDownItems.map(function (item) {
+              return (
+              <div className='flex my-2' onClick={() => {
+                item.ref.current.scrollIntoView({ behavior: "smooth", block: "start" })
+                closeMenu()
+                }} >
+                <img className='mr-5' alt={item.alt} src={item.icon}></img>
+                <p className='select-none'>{item.name}</p>
+              </div>
+              )
+            })}
+          </div>
+        }
       </nav>
     </>
   );
