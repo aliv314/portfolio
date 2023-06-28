@@ -47,28 +47,24 @@ const Navbar: FC<NavbarComponents> = (props) => {
   ]
   const [showMenu, setShowMenu] = useState(false)
 
-  const closeMenu = function () {
-    setShowMenu(false)
-  }
 
-  const openMenu = function () {
-    setShowMenu(true)
+  const toggleMenu = function () {
+    showMenu ? setShowMenu(false) : setShowMenu(true); 
   }
 
   return (
     <>
-      <nav className="fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
+      <nav className="group fixed w-full h-12 flex items-center justify-end px-2 bg-navy-blue">
         {/* On Click nav appears */}
-        <div onClick={() => { openMenu() }} className='rounded-lg px-3 py-2 flex justify-center items-center'>
+        <div onClick={() => { toggleMenu() }} className='z-10 rounded-lg px-3 py-2 flex justify-center items-center'>
           <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
         </div>
-        {
-          showMenu && <div className='absolute top-[3.25rem] flex flex-col py-2 pl-4 pr-6 bg-navy-blue rounded-md '>
+        {<div className='absolute top-[3.25rem] flex flex-col py-2 pl-4 pr-6 bg-navy-blue rounded-md '>
             {dropDownItems.map(function (item) {
               return (
               <div className='flex my-2' onClick={() => {
                 item.ref.current.scrollIntoView({ behavior: "smooth", block: "start" })
-                closeMenu()
+                toggleMenu()
                 }} >
                 <img className='mr-5' alt={item.alt} src={item.icon}></img>
                 <p className='select-none'>{item.name}</p>
