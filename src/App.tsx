@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import { useRef } from 'react';
 
 import AboutCard from './components/AboutCard/AboutCard';
