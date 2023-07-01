@@ -4,6 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    extend:{
+      backgroundImage:{
+        'hero-bg': "url('./src/assets/images/images/bg.jpg')",
+      }
+
+    },
     colors: {
       // Remember. When making night mode:
       // BG color and text color are hard-coded 
