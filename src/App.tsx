@@ -1,16 +1,29 @@
 import { useRef } from 'react';
 
 import AboutCard from './components/AboutCard/AboutCard';
+import Dropown from './components/Dropdown/Dropdown';
 
 
 function App() {
-  const aboutRef = useRef(null)
   
   return (
     <>
-    <main className='flex justify-center p-8 bg-teal h-full w-full px-4'>
-      <section ref={aboutRef} className = "mb-8"> 
+    <main className='flex flex-col justify-center p-8 bg-teal h-full w-full px-4'>
+      {/* About */}
+      <section className = "mb-8"> 
         <AboutCard></AboutCard>
+      </section>
+      {/* Projects */}
+      <section>
+        {/* <Dropown title="Projects"></Dropown> */}
+      </section>
+      {/* Experience */}
+      <section>
+        
+      </section>
+      {/* Contact */}
+      <section>
+
       </section>
     </main> 
     </>
