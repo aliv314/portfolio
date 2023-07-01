@@ -15,7 +15,7 @@ function App() {
   
   return (
     <>
-    <main className='p-8 bg-teal h-full w-full px-4'>
+    <main className='flex justify-center p-8 bg-teal h-full w-full px-4'>
       <section ref={aboutRef} className = "mb-8"> 
         <AboutCard></AboutCard>
       </section>
