@@ -8,7 +8,7 @@ function App() {
   
   return (
     <>
-    <main className='flex flex-col justify-center p-8 bg-teal h-full w-full px-4'>
+    <main className='flex flex-col items-center p-8 bg-teal h-full w-full px-4'>
       {/* About */}
       <section className = "mb-8"> 
         <AboutCard></AboutCard>
