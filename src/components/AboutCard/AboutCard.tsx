@@ -25,7 +25,7 @@ const AboutCard: FC = () => {
                     <p className='p-2 border-l-2 text-xs'> Full-Stack Software Engineer </p>
                 </div>
                 <div className='mb-4'>
-                    <p className='text-sm leading-[1.25rem]'> {aboutText} </p>
+                    <p className='text-xs tablet:text-sm leading-[1.25rem]'> {aboutText} </p>
                 </div>
                 <div className='bg-navy-blue flex flex-wrap rounded-lg mb-4'>
                     {skillsPlaceHolder.map(skill => {
