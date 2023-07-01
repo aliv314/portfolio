@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import AboutCard from './components/AboutCard/AboutCard';
-import Dropown from './components/Dropdown/Dropdown';
+import Dropown from './components/DropdownCard/DropdownCard';
 
 
 function App() {
@@ -10,12 +10,12 @@ function App() {
     <>
     <main className='flex flex-col justify-center p-8 bg-teal h-full w-full px-4'>
       {/* About */}
-      <section className = "mb-8"> 
+      <section className = "mb-4"> 
         <AboutCard></AboutCard>
       </section>
       {/* Projects */}
       <section>
-        <Dropown title="Projects"></Dropown>
+        
       </section>
       {/* Experience */}
       <section>

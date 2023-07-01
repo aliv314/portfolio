@@ -7,7 +7,7 @@ interface DropdownProps{
     // toggleOpen: Function,
 }
 
-const Dropown:FC<DropdownProps> = (props) => {
+const DropownCard:FC<DropdownProps> = (props) => {
     // const {title, toggleOpen} = props;
     const {title} = props;
     // const toggleOpen = () => setOpen(cur => !cur);
@@ -19,4 +19,4 @@ const Dropown:FC<DropdownProps> = (props) => {
     </>)
 }
 
-export default Dropown
+export default DropownCard

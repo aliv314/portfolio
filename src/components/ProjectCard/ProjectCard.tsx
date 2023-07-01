@@ -1,6 +1,16 @@
 import { FC } from 'react'
-const ProjectCard: FC = () => {
-    return (<></>)
+
+interface ProjectCardProps{
+    projectData: Object,
+}
+const ProjectCard: FC<ProjectCardProps> = (props) => {
+    const {projectData} = props;
+
+    return (
+        <li className=' bg-navy-blue '>
+
+        </li>
+    )
 }
 
 export default ProjectCard
