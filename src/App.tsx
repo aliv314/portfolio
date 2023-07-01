@@ -5,11 +5,6 @@ import AboutCard from './components/AboutCard/AboutCard';
 
 function App() {
   const aboutRef = useRef(null)
-  const projectsRef = useRef(null)
-  const skillsRef = useRef(null)
-  const blogRef = useRef(null)
-  const contact = useRef (null)
-
   
   return (
     <>
