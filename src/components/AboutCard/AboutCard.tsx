@@ -28,7 +28,6 @@ const AboutCard: FC = () => {
                     </ul>
                 </div>
             </div>
-
         </div>
 
     )
