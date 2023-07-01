@@ -4,7 +4,7 @@ import SkillTag from '../SkillTag/SkillTag'
 import devPic from '../../assets/images/images/DevPic.jpg'
 
 const AboutCard: FC = () => {
-    let skillsPlaceHolder: string[] = ["HTML", " CSS", " SCSS", " JavaScript", "TypeScript", "Tailwind", " Node", " React", " Express", " MySQL", " PostgreSQL", " Agile Development", " Document Object Model API", " Web APIs", " User Authentication", " OAuth", " Heroku", " Spring Boot", " Firebase", " Firestore", " GitHub", " Jest", " Python", " Java", "C", " Swift", " Xcode", "Android Studio"]
+    let skillsPlaceHolder: string[] = ["HTML", " CSS", " SCSS", " JavaScript", "TypeScript", "Tailwind", " Node", " React", " Express", " MySQL", " PostgreSQL", " Agile Development", " Document Object Model API", "Web APIs", " User Authentication", " OAuth", " Heroku", " Spring Boot", "Firebase", "Firestore", " GitHub", " Jest", " Python", " Java", "C", " Swift", " Xcode", "Android Studio"]
 
     return (
         <div className='bg-navy-blue items-center rounded-3xl flex flex-wrap flex-col max-w-[480px]'>

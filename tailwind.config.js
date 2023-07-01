@@ -7,9 +7,19 @@ module.exports = withMT({
   ],
   theme: {
     extend:{
+      keyframes:{
+        turnside:{
+            'from' : {transform: 'rotate(0)'},
+            'to': { transform: 'rotate(90deg)'}
+        },
+        turnback:{
+          'from': { transform: 'rotate(90deg)'},
+          'to' : {transform: 'rotate(0)'},
+        }
+      },
       backgroundImage:{
         'hero': "url('/src/assets/images/images/bg.jpg')",
-      }
+      },
 
     },
     colors: {
@@ -29,8 +39,9 @@ module.exports = withMT({
     },
     animation: {
       'spin-slow': 'spin 20s linear infinite',
+      'turnside': 'turnside 0.2s linear',
+      'turnback': 'turnback 0.2s linear'
     }
   },
   plugins: [],
 })
-

@@ -11,8 +11,8 @@ const projects = [
     }
 ]
 
-const ProjectCards:FC = () =>{
+const ProjectList:FC = () =>{
     return (<></>)
 }
 
-export default ProjectCards
+export default ProjectList

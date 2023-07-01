@@ -15,7 +15,7 @@ function App() {
       </section>
       {/* Projects */}
       <section>
-        {/* <Dropown title="Projects"></Dropown> */}
+        <Dropown title="Projects"></Dropown>
       </section>
       {/* Experience */}
       <section>
