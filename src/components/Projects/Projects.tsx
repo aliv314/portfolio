@@ -13,7 +13,7 @@ const projects = [
     title: "Spark-E Backend",
     github: "https://github.com/alv-314/SPRK-E_backend",
     description:
-      "NodeJs Backend API designed to store encrypted journal entries.",
+      "NodeJS Backend API designed to store encrypted journal entries.",
   },
 ];
 
