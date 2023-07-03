@@ -19,6 +19,11 @@ const projects = [
     title: "Exercisepedia",
     github: "https://github.com/FelixRodriguezJr/exercisepedia-iphone-app",
     description:"iOS App that guides the user through a series of bodyweight exercises and records their progress."
+  },
+  {
+    title:"Geek Text",
+    github:"https://github.com/AmberImani/CEN-4010-Group-15/tree/master",
+    description:'Java SpringBoot API Service for "Geek Text", a virtual bookstore.'
   }
 ];
 
