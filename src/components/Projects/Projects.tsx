@@ -1,12 +1,6 @@
 import { FC, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import {
-  Collapse,
-  Button,
-  Card,
-  Typography,
-  CardBody,
-} from "@material-tailwind/react";
+import { Collapse } from "@material-tailwind/react";
 import DropownCard from "../DropdownCard/DropdownCard";
 
 const projects = [
@@ -17,8 +11,9 @@ const projects = [
   },
   {
     title: "Spark-E Backend",
-    github: "https://github.com/alv-314/pantrykeeper",
-    description: "NodeJs Backend API designed to store encrypted journal entries.",
+    github: "https://github.com/alv-314/SPRK-E_backend",
+    description:
+      "NodeJs Backend API designed to store encrypted journal entries.",
   },
 ];
 
