@@ -12,15 +12,13 @@ import DropownCard from "../DropdownCard/DropdownCard";
 const projects = [
   {
     title: "PantryKeeper",
-    alt: "Pantry Keeper Icon",
     github: "https://github.com/alv-314/pantrykeeper",
     description: "React web app aimed at tackling household foodwaste.",
   },
   {
-    title: "PantryKeeper",
-    alt: "Pantry Keeper Icon",
+    title: "Spark-E Backend",
     github: "https://github.com/alv-314/pantrykeeper",
-    description: "React web app aimed at tackling household foodwaste.",
+    description: "NodeJs Backend API designed to store encrypted journal entries.",
   },
 ];
 
@@ -36,7 +34,13 @@ const Projects: FC = () => {
           {projects &&
             projects.map(function (project, index) {
               return (
-                <a className="w-full" key={index} href={project.github} target="_blank" rel="noreferrer">
+                <a
+                  className="w-full"
+                  key={index}
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <ProjectCard
                     title={project.title}
                     description={project.description}

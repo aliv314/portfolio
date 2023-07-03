@@ -4,6 +4,11 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    extend: {
+      backgroundImage: {
+        hero: "url('/src/assets/images/images/bg.jpg')",
+      },
+    },
     colors: {
       // Remember. When making night mode:
       // BG color and text color are hard-coded
