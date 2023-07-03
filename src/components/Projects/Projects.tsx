@@ -7,14 +7,19 @@ const projects = [
   {
     title: "PantryKeeper",
     github: "https://github.com/alv-314/pantrykeeper",
-    description: "React web app aimed at tackling household foodwaste.",
+    description: "React WebApp. Aimed at tackling household foodwaste.",
   },
   {
     title: "Spark-E Backend",
     github: "https://github.com/alv-314/SPRK-E_backend",
     description:
-      "NodeJs Backend API designed to store encrypted journal entries.",
+      "NodeJS Backend API designed to fetch and store encrypted journal entries.",
   },
+  {
+    title: "Exercisepedia",
+    github: "https://github.com/FelixRodriguezJr/exercisepedia-iphone-app",
+    description:"iOS App that guides the user through a series of bodyweight exercises and records their progress."
+  }
 ];
 
 const Projects: FC = () => {
