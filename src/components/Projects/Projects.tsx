@@ -8,20 +8,17 @@ import {
   CardBody,
 } from "@material-tailwind/react";
 import DropownCard from "../DropdownCard/DropdownCard";
+
 const projects = [
   {
     title: "PantryKeeper",
-    icon: "",
     alt: "Pantry Keeper Icon",
-    landing: "https://pantrykeeper.vercel.app/",
     github: "https://github.com/alv-314/pantrykeeper",
     description: "React web app aimed at tackling household foodwaste.",
   },
   {
     title: "PantryKeeper",
-    icon: "",
     alt: "Pantry Keeper Icon",
-    landing: "https://pantrykeeper.vercel.app/",
     github: "https://github.com/alv-314/pantrykeeper",
     description: "React web app aimed at tackling household foodwaste.",
   },
@@ -39,11 +36,12 @@ const Projects: FC = () => {
           {projects &&
             projects.map(function (project, index) {
               return (
+                <a className="w-full" key={index} href={project.github} target="_blank" rel="noreferrer">
                   <ProjectCard
-                    key={index}
                     title={project.title}
                     description={project.description}
                   />
+                </a>
               );
             })}
         </ul>
