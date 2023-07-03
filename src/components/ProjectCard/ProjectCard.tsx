@@ -1,13 +1,5 @@
 import { FC } from 'react'
-import {
-    Card,
-    CardHeader,
-    CardBody,
-    CardFooter,
-    Typography,
-    Button
-  } from "@material-tailwind/react";
-import CardIcon from '../CardIcon/CardIcon';
+
 import testIcon from '../../assets/images/icons/about-icon.svg'
 
 interface ProjectCardProps{
@@ -18,16 +10,15 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
     const {title, description} = props;
 
     return (
-        <Card className='bg-navy-blue flex flex-row flex-wrap relative w-full max-w-[480px] h-[4rem]'>
-            <CardIcon>
+        <li className='relative w-[100%] bg-navy-blue flex items-center rounded-3xl h-[4rem] pl-10 mb-2'>
+            <div className='absolute left-[-7%] h-[3.5rem] w-[3.5rem] rounded-full flex items-center justify-center bg-lime p-2'>
                 <img className='h-full' src={testIcon} alt="test"></img>
-            </CardIcon>
-            <div>
-                <h4 className=''> {title} </h4>
-                <p className=''> {description} </p>
             </div>
-        </Card>
+            <div className='w-[95%]'>
+                <h4 className=''> {title} </h4>
+                <p className=' whitespace-nowrap overflow-hidden text-ellipsis text-xs'> {description} </p>
+            </div>
+        </li>
     )
 }
-
 export default ProjectCard

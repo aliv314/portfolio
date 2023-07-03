@@ -1,6 +1,6 @@
-import { useRef } from 'react';
-import ProjectCard from './components/ProjectCard/ProjectCard';
-import AboutCard from './components/AboutCard/AboutCard';
+
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const project = {
@@ -13,25 +13,10 @@ function App() {
 }
   return (
     <>
-    <main className='flex flex-col items-center p-8 bg-teal h-full w-full px-4'>
-      {/* About */}
-      <section className = "mb-4"> 
-        <AboutCard></AboutCard>
-      </section>
-      {/* Projects */}
-      <section>
-        <ProjectCard 
-          title={project.title} 
-          description={project.description}></ProjectCard>
-      </section>
-      {/* Experience */}
-      <section>
-        
-      </section>
-      {/* Contact */}
-      <section>
-
-      </section>
+    <main className='flex flex-col items-center py-8 px-4 bg-teal '>
+      <About/>
+      <Projects/>
+      
     </main> 
     </>
   );

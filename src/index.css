@@ -11,6 +11,7 @@
   box-sizing: border-box;
   font-family: McLaren;
   color: white;
+  user-select: none;
 }
 body{
   background-color: #36868F;
