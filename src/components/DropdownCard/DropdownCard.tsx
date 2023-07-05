@@ -3,11 +3,12 @@ import Arrow from "@mui/icons-material/ArrowForward";
 interface DropdownProps {
   title: String;
   toggleOpen: Function;
+  open: Boolean;
 }
 
 const Dropown: FC<DropdownProps> = (props) => {
-  const { title, toggleOpen } = props;
-  const [arrowState, setArrow] = useState(false);
+  const { title, toggleOpen, open} = props;
+  const [arrowState, setArrow] = useState(open);
   const toggleArrow = () => setArrow(curr => !curr);
 
   return (

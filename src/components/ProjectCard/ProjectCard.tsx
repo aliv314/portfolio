@@ -17,8 +17,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
       <div className="w-[95%]">
         <h4 className=""> {title} </h4>
         <p className=" whitespace-nowrap overflow-hidden text-ellipsis text-xs">
-          {" "}
-          {description}{" "}
+          {description}
         </p>
       </div>
     </li>

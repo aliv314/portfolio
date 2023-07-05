@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import { Collapse } from "@material-tailwind/react";
 import DropownCard from "../DropdownCard/DropdownCard";
+import { Collapse } from "@material-tailwind/react";
 
 const projects = [
   {
@@ -33,7 +33,7 @@ const Projects: FC = () => {
 
   return (
     <div className="w-full max-w-[480px]">
-      <DropownCard title={"Projects"} toggleOpen={toggleOpen} />
+      <DropownCard title={"Projects"} open = {true} toggleOpen={toggleOpen} />
       <Collapse open={open}>
         <ul className="w-full flex flex-col items-end pl-[2rem]">
           {projects &&
