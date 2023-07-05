@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 const ExperienceCard: FC<ExperienceCardProps> = (props) => {
   const { org, startEnd, position, bullets } = props;
   return (
-    <li className="relative w-[100%] bg-navy-blue flex item-start py-4 rounded-3xl max-h-[18rem] pl-10 mb-2">
+    <li className="relative w-[100%] bg-navy-blue flex item-start py-4 rounded-3xl max-h-[20rem] pl-10 mb-2">
       <div className="absolute left-[-7%] h-[3.5rem] w-[3.5rem] rounded-full flex items-center justify-center bg-lime p-2">
         <img className="h-full" src={experienceIcon} alt="test"></img>
       </div>
@@ -23,7 +23,11 @@ const ExperienceCard: FC<ExperienceCardProps> = (props) => {
         <ul>
           {bullets &&
             bullets.map((point) => {
-              return <li className="list-disc text-xs mb-1">{point}</li>;
+              return (
+                <li className=" list-disc text-xs mb-1">
+                  <p className=" line-clamp-3">{point}</p>
+                </li>
+              );
             })}
         </ul>
       </div>
