@@ -10,9 +10,9 @@ const experience = [
     position: "Android Developer",
     bullets: [
       "Collaborated closely with a team to advance the development of the “On the Spot” application.",
-      "Developed and implemented key features in Java, such as a record retrieval.",
-      "Self-taught Android development principles and mastered essential components such as RecyclerView, Camera2, and ViewPager2 to optimize app functionality",
-      "Utilized Firestore database to manage patient records and facilitate text communications between clinicians and patients while ensuring data privacy and security",
+      "Developed and implemented key features in Java, such as a record retrieval system.",
+      "Self-taught Android development principles and mastered essential components such as RecyclerView, Camera2, and ViewPager2.",
+      "Utilized Cloud Firestore to manage patient records and facilitate text communications between clinicians and patients while ensuring data privacy and security.",
     ],
   },
 ];
