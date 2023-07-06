@@ -21,7 +21,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
         <p className="text-xs overflow-hidden mb-3 whitespace-nowrap text-ellipsis group-hover:whitespace-normal group-hover:overflow-visible">
           {description}
         </p>
-        <ul className="flex overflow-auto group-hover:flex-wrap group-hover:overflow-visible">
+        <ul className="flex overflow-hidden group-hover:flex-wrap group-hover:overflow-visible">
           {tags &&
             tags.map((tag, index) => {
               return (
