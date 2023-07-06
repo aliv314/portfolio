@@ -17,6 +17,7 @@ const About: FC = () => {
     "MySQL",
     "PostgreSQL",
     "Agile Development",
+    "Git",
     "Document Object Model API",
     "Web APIs",
     "User Authentication",
@@ -24,7 +25,7 @@ const About: FC = () => {
     "Vercel",
     "Spring Boot",
     "Firebase",
-    "Firestore",
+    "Cloud Firestore",
     "GitHub",
     "Jest",
     "Python",
@@ -55,7 +56,7 @@ const About: FC = () => {
             {skillsPlaceHolder.map(function (skill, index) {
               return (
                 <li key={index} className="mr-1 mb-1">
-                  <SkillTag skill={skill}></SkillTag>
+                  <SkillTag skill={skill}/>
                 </li>
               );
             })}
