@@ -21,7 +21,7 @@ const projects = [
     title: "Exercisepedia",
     github: "https://github.com/FelixRodriguezJr/exercisepedia-iphone-app",
     description:"iOS App that guides the user through a series of bodyweight exercises and records their progress.",
-    tags: ['Swift', 'Xcode', 'Github']
+    tags: ['Swift', 'Xcode', 'Github', 'Agile Development']
   },
   {
     title:"Geek Text",
