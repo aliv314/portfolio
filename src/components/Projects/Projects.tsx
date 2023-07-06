@@ -43,19 +43,17 @@ const Projects: FC = () => {
           {projects &&
             projects.map(function (project, index) {
               return (
-                <a
+                <div
                   className="w-full"
                   key={index}
-                  href={project.github}
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                  >
                   <ProjectCard
                     title={project.title}
                     description={project.description}
                     tags={project.tags}
+                    repo={project.github}
                   />
-                </a>
+                </div>
               );
             })}
         </ul>
