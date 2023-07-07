@@ -36,6 +36,7 @@ const projects = [
 
 const Projects: FC = () => {
   const [open, setOpen] = useState(true);
+  const [status, setStatus] = useState(-1);
   const toggleOpen = () => setOpen((cur) => !cur);
 
   return (
@@ -48,10 +49,18 @@ const Projects: FC = () => {
               return (
                 <ProjectCard
                   key={index}
+                  selected={index === status ? true : false}
                   title={project.title}
                   description={project.description}
                   tags={project.tags}
                   repo={project.github}
+                  handleSelect={() => {
+                    if (index === status){
+                      setStatus(-1)
+                    }else{
+                      setStatus(index);
+                    }
+                  }}
                 />
               );
             })}
