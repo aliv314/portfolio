@@ -28,21 +28,22 @@ const Experience: FC = () => {
           toggleOpen();
         }}
       ></DropdownCard>
-        <Collapse open={open}>
-      <ul className="w-full flex flex-col items-end pl-[2rem]">
+      <Collapse open={open}>
+        <ul className="w-full flex flex-col items-end pl-[2rem]">
           {experience &&
-            experience.map((experience) => {
+            experience.map((experience, index) => {
               return (
-                <ExperienceCard
-                  org={experience.org}
-                  startEnd={experience.startEnd}
-                  position={experience.position}
-                  bullets={experience.bullets}
-                ></ExperienceCard>
+                  <ExperienceCard
+                    key={index}
+                    org={experience.org}
+                    startEnd={experience.startEnd}
+                    position={experience.position}
+                    bullets={experience.bullets}
+                  />
               );
             })}
-      </ul>
-        </Collapse>
+        </ul>
+      </Collapse>
     </div>
   );
 };

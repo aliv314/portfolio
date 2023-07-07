@@ -22,9 +22,9 @@ const ExperienceCard: FC<ExperienceCardProps> = (props) => {
         </div>
         <ul>
           {bullets &&
-            bullets.map((point) => {
+            bullets.map((point, index) => {
               return (
-                <li className=" list-disc text-xs mb-1">
+                <li key={index} className=" list-disc text-xs mb-1">
                   <p className=" line-clamp-3">{point}</p>
                 </li>
               );
