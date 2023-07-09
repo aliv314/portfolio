@@ -1,4 +1,3 @@
-import {grey} from '@mui/material/colors'
 import { FC } from "react";
 
 interface ContactCardProps {
@@ -14,11 +13,13 @@ const ContactCard: FC<ContactCardProps> = (props) => {
       className={`group relative w-[100%] bg-navy-blue flex items-center rounded-3xl h-[5rem] py-2 pl-10 mb-2`}
     >
       <div className="absolute left-[-7%] h-[3.5rem] w-[3.5rem] rounded-full flex items-center justify-center bg-lime p-2">
-            <ContactIcon sx={{ color: grey['900'], fontSize: 40 }}/>
+        <ContactIcon sx={{ color:'black', fontSize: 40 }} />
       </div>
       <div className="w-[95%] flex flex-col">
         <h4 className="text-base"> {name} </h4>
-        <p className="text-xs"> {link} </p>
+        <p className="text-xs overflow-hidden whitespace-nowrap text-ellipsis">
+          {link}
+        </p>
       </div>
     </li>
   );
