@@ -2,7 +2,7 @@
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Experience from './components/Experience/Experience';
-
+import Contact from './components/Contacts/Contacts'
 function App() {
   return (
     <>
@@ -10,7 +10,7 @@ function App() {
       <About/>
       <Projects/>
       <Experience/>
-      
+      <Contact/>
     </main> 
     </>
   );

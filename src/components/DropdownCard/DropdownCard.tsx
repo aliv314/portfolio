@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import Arrow from "@mui/icons-material/ArrowForward";
 interface DropdownProps {
-  title: String;
+  title: string;
   toggleOpen: Function;
-  open: Boolean;
+  open: boolean;
 }
 
 const Dropown: FC<DropdownProps> = (props) => {

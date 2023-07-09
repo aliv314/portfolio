@@ -10,11 +10,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: McLaren;
-  color: white;
   user-select: none;
 }
 body{
   background-color: #36868F;
+  color: white;
 }
 section{
   scroll-margin-top: 3rem;

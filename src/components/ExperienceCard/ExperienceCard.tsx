@@ -2,10 +2,10 @@ import { FC } from "react";
 import experienceIcon from "../../assets/images/icons/experience-icon.svg";
 
 interface ExperienceCardProps {
-  org: String;
-  startEnd: String;
-  position: String;
-  bullets: Array<String>;
+  org: string;
+  startEnd: string;
+  position: string;
+  bullets: Array<string>;
 }
 const ExperienceCard: FC<ExperienceCardProps> = (props) => {
   const { org, startEnd, position, bullets } = props;
