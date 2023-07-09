@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import DropownCard from "../DropdownCard/DropdownCard";
 import { Collapse } from "@material-tailwind/react";
@@ -35,10 +35,14 @@ const projects = [
 ];
 
 const Projects: FC = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [status, setStatus] = useState(-1);
   const toggleOpen = () => setOpen((cur) => !cur);
 
+  useEffect(() =>{
+    setOpen(true)
+  }, [])
+  
   return (
     <div className="w-full max-w-[480px]">
       <DropownCard title={"Projects"} open={true} toggleOpen={toggleOpen} />
