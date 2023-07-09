@@ -42,7 +42,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 );
               })}
           </ul>
-          <a href={repo as string} className={` ${selected? 'contents' : 'hidden'}`}>
+          <a href={repo} target="_blank" rel="noreferrer" className={` ${selected? 'contents' : 'hidden'}`}>
             <GithubIcon/>
           </a>
         </div>

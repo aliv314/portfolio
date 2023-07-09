@@ -12,16 +12,19 @@ const contacts = [
     name: "LinkedIn",
     icon: LinkedInIcon,
     link: "https://www.linkedin.com/in/alejandro-vecchio/",
+    outward: true,
   },
   {
     name: "Github",
     icon: GitHubIcon,
     link: "https://github.com/alv-314",
+    outward: true,
   },
   {
     name: "Email",
     icon: EmailIcon,
     link: "alejandrovecchio01@gmail.com",
+    outward: false,
   },
 ];
 
@@ -46,6 +49,7 @@ const Contact: FC = () => {
                   name={contact.name}
                   link={contact.link}
                   icon={contact.icon}
+                  outward = {contact.outward}
                 />
               );
             })}

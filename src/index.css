@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
   font-family: McLaren;
   src: url(./assets/fonts/McLaren-Regular.ttf);
@@ -10,11 +11,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: McLaren;
-  user-select: none;
 }
 body{
   background-color: #36868F;
+  user-select: none;
   color: white;
+}
+img{
+  pointer-events: none;
 }
 section{
   scroll-margin-top: 3rem;
