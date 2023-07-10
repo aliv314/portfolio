@@ -5,6 +5,12 @@ import { Collapse } from "@material-tailwind/react";
 
 const projects = [
   {
+    title: "Dev Portfolio",
+    github: "https://github.com/alv-314/pantrykeeper",
+    description: "This portfolio was built from the ground up to showcase my work. I'm constantly improving it and adding new features.",
+    tags: ["React", "Typescript", "Tailwind", "Material UI", "Vercel"],
+  },
+  {
     title: "PantryKeeper",
     github: "https://github.com/alv-314/pantrykeeper",
     description:
@@ -39,10 +45,10 @@ const Projects: FC = () => {
   const [status, setStatus] = useState(-1);
   const toggleOpen = () => setOpen((cur) => !cur);
 
-  useEffect(() =>{
-    setOpen(true)
-  }, [])
-  
+  useEffect(() => {
+    setOpen(true);
+  }, []);
+
   return (
     <div className="w-full max-w-[480px]">
       <DropownCard title={"Projects"} open={true} toggleOpen={toggleOpen} />
@@ -59,9 +65,9 @@ const Projects: FC = () => {
                   tags={project.tags}
                   repo={project.github}
                   handleSelect={() => {
-                    if (index === status){
-                      setStatus(-1)
-                    }else{
+                    if (index === status) {
+                      setStatus(-1);
+                    } else {
                       setStatus(index);
                     }
                   }}
