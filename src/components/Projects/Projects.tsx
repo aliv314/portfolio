@@ -6,7 +6,7 @@ import { Collapse } from "@material-tailwind/react";
 const projects = [
   {
     title: "Dev Portfolio",
-    github: "https://github.com/alv-314/pantrykeeper",
+    github: "https://github.com/alv-314/portfolio",
     description: "This portfolio was built from the ground up to showcase my work. I'm constantly improving it and adding new features.",
     tags: ["React", "Typescript", "Tailwind", "Material UI", "Vercel"],
   },
