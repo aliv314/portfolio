@@ -31,6 +31,7 @@ const About: FC = () => {
     "Python",
     "Java",
     "C",
+    "Unix Shell",
     "Swift",
     "Xcode",
     "Web Development",
