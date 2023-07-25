@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "MyTarClone",
-    github: "https://github.com/AmberImani/CEN-4010-Group-15/tree/master",
+    github: "https://github.com/alv-314/tar-clone",
     description:
       'C application that copies the functionality of the tar Unix command to store and extract files from a binary file.',
     tags: ["C", "Unix Shell"],
