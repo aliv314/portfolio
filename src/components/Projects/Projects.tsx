@@ -38,6 +38,13 @@ const projects = [
       'Java SpringBoot API Service for "Geek Text", a virtual bookstore.',
     tags: ["Java", "Spring Boot", "Agile Development", "Github"],
   },
+  {
+    title: "MyTarClone",
+    github: "https://github.com/AmberImani/CEN-4010-Group-15/tree/master",
+    description:
+      'C application that copies the functionality of the tar Unix command to store and extract files from a binary file.',
+    tags: ["C", "Unix Shell"],
+  },
 ];
 
 const Projects: FC = () => {
